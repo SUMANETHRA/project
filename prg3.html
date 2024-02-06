@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function LOGIN() {
+        username=document.myform.username.value;
+        if((document.myform.username.value=="")||(document.myform.password.value==0))
+        {
+            alert("enter the correct details");
+            return false;
+        }
+        else
+        {
+        alert(" hi "+username+" you have loged in succesfully");
+    }
+}
+</script>
+<style>
+    .class1{
+        background-color: rgb(166, 193, 203);
+        margin-left: 370px;
+        margin-right: 350px;
+        margin-bottom: 100px;
+        margin-top:60px;
+        padding-top:60px;
+        padding-left: 80px;
+        padding-right: 100px;
+        padding-bottom: 80px;
+        border-radius: 20px;
+        outline-style: groove;
+    }
+    .class2{
+        padding-left:20px;
+        padding-bottom: 10px;
+        font-weight: bolder;
+        font-size: larger;
+    }       
+    .class3{
+        font-weight: bolder;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .class4{
+        text-align: center;
+        font-weight: bolder;
+    }  
+</style>
+<body>
+    <div class="class1">
+    <div class="class2">
+        INSTAGRAM<br><br></div>
+        <div class="class3">
+            <form name="myform" onsubmit="return(validate());">
+                <lable><H>USERNAME<br>
+                    <input type="name" placeholder="NAME" name="username" id="username" ></lable><br><br>
+                    <label>PASSWORD<br>
+                     <input type="name" placeholder="PASSWORD" name="password" id="password"></label><br><br>
+                     <div class="class4"><input type="submit" value="LOGIN" onclick="LOGIN()";></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
